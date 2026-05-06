@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "cta": "Voir mes projets"
+  }
+}
