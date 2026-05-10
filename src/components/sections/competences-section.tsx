@@ -16,8 +16,8 @@ const CATEGORY_LABELS: Record<SkillCategory, string> = {
   language: 'Langages',
   framework: 'Frameworks & Libs',
   tool: 'Outils & DevOps',
-  os: 'Systèmes & Cloud',
   cyber: 'Cybersécurité',
+  os: 'Systèmes & Cloud',
 };
 
 const CATEGORY_ORDER: SkillCategory[] = ['language', 'framework', 'tool', 'os', 'cyber'];
