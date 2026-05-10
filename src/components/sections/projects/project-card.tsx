@@ -1,9 +1,7 @@
-import Link from 'next/link';
-
-import { BookOpen, CalendarDays, Check, Clock, Code2, ExternalLink, GitBranch, Timer } from 'lucide-react';
+import { BookOpen, CalendarDays, Check, Clock, Code2, Timer } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import type { Project } from '@/data/projects';
 
@@ -83,31 +81,6 @@ const ProjectCard = ({ project }: Props) => {
           </div>
         </div>
       </CardContent>
-
-      <CardFooter className="flex gap-2">
-        {project.githubUrl && (
-          <Link
-            href={project.githubUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <GitBranch className="size-3.5" />
-            GitHub
-          </Link>
-        )}
-        {project.liveUrl && (
-          <Link
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <ExternalLink className="size-3.5" />
-            Demo
-          </Link>
-        )}
-      </CardFooter>
     </Card>
   );
 };
